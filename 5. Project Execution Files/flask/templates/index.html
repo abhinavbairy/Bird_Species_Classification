@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bird Classification</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/index.css') }}">
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="{{ url_for('index') }}">Home</a>
+        <a href="{{ url_for('about') }}">About</a>
+        <a href="{{ url_for('classification') }}">Classification</a>
+        
+    </div>
+
+    <div class="container">
+        <h1>Welcome to Bird Species Classification</h1>
+        <p>Upload an image of a bird, and we will identify its species.</p>
+        <a href="{{ url_for('classification') }}" class="button">Get Started</a>
+    </div>
+
+</body>
+</html>
