@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/about.css') }}">
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="{{ url_for('index') }}">Home</a>
+        <a href="{{ url_for('about') }}">About</a>
+        <a href="{{ url_for('classification') }}">Classification</a>
+       
+    </div>
+
+    <div class="container">
+        <h1>About This Project</h1>
+        <p>This is a deep learning-based Bird Species Classification project using a CNN model.</p>
+        <p>This project is designed to identify different bird species through images. It provides an easy and
+         interactive way for users to learn more about various birds by simply uploading a picture. 
+         The aim is to make bird identification simple, accurate, and accessible to everyone.</p>
+    </div>
+
+</body>
+</html>
